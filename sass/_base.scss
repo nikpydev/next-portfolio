@@ -1,0 +1,47 @@
+// FONT VARIABLES
+$font-primary: "Nunito", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-rows:
+    [navbar-start]
+    min-content
+    [navbar-end header-start]
+    min-content
+    [header-end content-start]
+    min-content
+    [content-end footer-start]
+    min-content
+    [footer-end];
+
+  grid-template-columns:
+    [full-start navbar-start]
+    minmax(6rem, 1fr)
+    [center-start]
+    repeat(3, [col-start] minmax(min-content, 45rem) [col-end])
+    [center-end]
+    minmax(6rem, 1fr)
+    [full-end navbar-end];
+}

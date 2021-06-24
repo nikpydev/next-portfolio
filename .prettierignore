@@ -1,0 +1,6 @@
+.next
+.node_modules
+*.min.js
+*.min.jsx
+*.min.ts
+*.min.tsx

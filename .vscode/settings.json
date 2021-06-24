@@ -1,0 +1,6 @@
+{
+  "files.autoSave": "onWindowChange",
+  "window.zoomLevel": 1.5,
+  "editor.fontSize": 18,
+  "terminal.integrated.fontSize": 16
+}
